@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Website</title>
+    <!-- Tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      /* font Manrope */
+      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+      /* font Montagu Slab */      
+      @import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap');
+
+      .manrope-font {
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .montagu-slab {
+  font-family: "Montagu Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+    </style>
+  </head>
+  <body class="mx-10 manrope-font bg-[#000000] text-[#ffffff] space-y-36">
+    <!-- header -->
+    <header class="mt-3 md:mt-[30px] lg:mt-[50px] space-y-16">
+      <!-- navbar -->
+      <nav
+        class="flex justify-between items-center w-full inter-font py-2 mb-[200px]"
+      >
+        <div class="logo flex items-center">
+          <h1 class="text-3xl">LOGO</h1>
+          <img src="./images/logo_icon.png" alt="" />
+        </div>
+
+        <div class="hamberger-icon md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            fill="currentColor"
+            class="size-4"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75ZM2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Zm0 4.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+
+        <div class="hidden md:block menuItems">
+          <ul class="flex gap-6 items-center font-normal">
+            <li>Home</li>
+            <li>About Me</li>
+            <li>Projects</li>
+            <li>Testimonial</li>
+          </ul>
+        </div>
+
+        <div class="hidden md:block social-media">
+          <button
+            class="bg-[#E6AA32] rounded-3xl py-3 px-6 font-medium text-[#000000]"
+          >
+            Downlaod CV
+          </button>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+      <!-- Banner start -->
+      <section class="container mx-10">
+        <!-- hero description and hero img -->
+        <!-- description -->
+        <div class="w-full lg:flex lg:flex-row-reverse items-center space-y-2">
+          <!-- hero img -->
+          <div class="img w-full lg:w-1/2">
+            <div
+              class="relative w-full h-[343px] bg-gradient-to-l from-[#17171A] to-[#17171a5e] rounded-tl-[140px]"
+            >
+              <div class="absolute bottom-0 left-10">
+                <img src="./images/hero.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="desc-title w-full lg:w-1/2">
+            <h2 class="text-[#797C86] montagu-font">Web Developer</h2>
+            <h1 class="font-bold montagu-slab lg:text-[58px]">HI! This is</h1>
+            <span
+              class="text-[#E6AA32] montagu-slab lg:text-[58px] font-bold"
+              >Zahid Hossain</span
+            >
+            <p class="text-[#797C86] pb-6">
+              As a web designer with four years of experience, I specialize in
+              <br />
+              creating visually appealing and user-friendly websites. My <br />
+              expertise includes responsive design, UI/UX principles, and <br />
+              collaborating with clients to bring their visions to life.
+            </p>
+            <div class="btn w-full lg:flex gap-6 items-center">
+              <button
+                class="bg-[#E6AA32] rounded-3xl py-3 px-8 font-medium text-[#000000]"
+              >
+                Let’s Connect
+              </button>
+              <p>View Portfolios</p>
+              <img src="./images/Arrow-hero.png" alt="" />
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </header>
+    <!-- header end -->
+
+    <!-- main section start -->
+    <main>
+      <!-- services section -->
+      <section class="services-section space-y-14">
+        <div class="desc-title flex flex-col text-center">
+          <h2 class="text-[#797C86] montagu-slab-font">Specialties</h2>
+          <h1 class="font-bold lg:text-[48px]">My specialities</h1>
+          <p class="text-[#797C86] pb-6">
+            As a web designer with four years of experience, I specialize in
+            creating visually appealing <br />
+            and user-friendly websites. My expertise includes responsive design.
+          </p>
+        </div>
+
+        <!-- multiple services card -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 lg:gap-5">
+          <!-- service card-1 -->
+          <div
+            class="flex flex-col px-9 py-12 gap-4 items-center bg-gradient-to-l from-[#0E0E10] to-[#17171A3B]"
+          >
+            <img src="./images/service-1.png" alt="" />
+            <h class="text-lg text-[#E6E6E6]">Front-End Development</h>
+            <p class="text-center text-[#797C86]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <!-- service card-2 -->
+          <div
+            class="flex flex-col px-9 py-12 gap-4 items-center bg-gradient-to-l from-[#0E0E10] to-[#17171A3B]"
+          >
+            <img src="./images/service-2.png" alt="" />
+            <h class="text-lg text-[#E6E6E6]">Back-End Development</h>
+            <p class="text-center text-[#797C86]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <!-- service card-3 -->
+          <div
+            class="flex flex-col px-9 py-12 gap-4 items-center bg-gradient-to-l from-[#0E0E10] to-[#17171A3B]"
+          >
+            <img src="./images/service-3.png" alt="" />
+            <h class="text-lg text-[#E6E6E6]">Full-Stack Development</h>
+            <p class="text-center text-[#797C86]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <!-- service card-4 -->
+          <div
+            class="flex flex-col px-9 py-12 gap-4 items-center bg-gradient-to-l from-[#0E0E10] to-[#17171A3B]"
+          >
+            <img src="./images/service-4.png" alt="" />
+            <h class="text-lg text-[#E6E6E6]">Web Application Security</h>
+            <p class="text-center text-[#797C86]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <!-- service card-5 -->
+          <div
+            class="flex flex-col px-9 py-12 gap-4 items-center bg-gradient-to-l from-[#0E0E10] to-[#17171A3B]"
+          >
+            <img src="./images/service-5.png" alt="" />
+            <h class="text-lg text-[#E6E6E6]">E-commerce Development</h>
+            <p class="text-center text-[#797C86]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <!-- service card-6 -->
+          <div
+            class="flex flex-col px-9 py-12 gap-4 items-center bg-gradient-to-l from-[#0E0E10] to-[#17171A3B]"
+          >
+            <img src="./images/service-6.png" alt="" />
+            <h class="text-lg text-[#E6E6E6]">Cloud-Based Development</h>
+            <p class="text-center text-[#797C86]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <!-- service card-7 -->
+          <div
+            class="flex flex-col px-9 py-12 gap-4 items-center bg-gradient-to-l from-[#0E0E10] to-[#17171A3B]"
+          >
+            <img src="./images/service-7.png" alt="" />
+            <h class="text-lg text-[#E6E6E6]">Progressive Web Apps</h>
+            <p class="text-center text-[#797C86]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <!-- service card-8 -->
+          <div
+            class="flex flex-col px-9 py-12 gap-4 items-center bg-gradient-to-l from-[#0E0E10] to-[#17171A3B]"
+          >
+            <img src="./images/service-8.png" alt="" />
+            <h class="text-lg text-[#E6E6E6]">AI-Powered Development</h>
+            <p class="text-center text-[#797C86]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- works section -->
+      <section class="works-section my-40">
+        <!-- title description -->
+        <div class="desc-title flex flex-col text-center">
+          <h2 class="text-[#797C86] font-semibold montagu-slab-font uppercase">
+            recent works
+          </h2>
+          <h1 class="font-bold lg:text-[48px] uppercase">My Recent works</h1>
+          <p class="text-[#797C86] pb-6">
+            As a web designer with four years of experience, I specialize in
+            creating <br />
+            visually appealing and user-friendly websites. My expertise includes
+            <br />
+            responsive design.
+          </p>
+        </div>
+        <!-- multiple works card -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+          <!-- work card-1 -->
+          <div class="w-full h-[268.5px] bg-[#FFFFFF26]"></div>
+          <!-- work card-2 -->
+          <div class="w-full h-[268.5px] bg-[#FFFFFF26]"></div>
+          <!-- work card-3 -->
+          <div class="w-full h-[268.5px] bg-[#FFFFFF26]"></div>
+          <!-- work card-4 -->
+          <div class="w-full h-[268.5px] bg-[#FFFFFF26]"></div>
+          <!-- work card-5 -->
+          <div class="w-full h-[268.5px] bg-[#FFFFFF26]"></div>
+          <!-- work card-6 -->
+          <div class="w-full h-[268.5px] bg-[#FFFFFF26]"></div>
+        </div>
+      </section>
+
+      <!-- Other services -->
+
+      <!-- services section -->
+      <section class="services-section space-y-14">
+        <div class="desc-title flex flex-col text-center">
+          <h2 class="text-[#797C86] font-semibold montagu-slab-font uppercase">
+            Services
+          </h2>
+          <h1 class="font-bold lg:text-[48px] uppercase">My other services</h1>
+          <p class="text-[#797C86] pb-6">
+            As a web designer with four years of experience, I specialize in
+            creating visually appealing <br />
+            and user-friendly websites. My expertise includes responsive design.
+          </p>
+        </div>
+
+        <!-- multiple services card -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-10">
+          <!-- service card-1 -->
+          <div
+            class="flex flex-col px-9 py-12 gap-4 items-center bg-gradient-to-l from-[#0E0E10] to-[#17171A3B]"
+          >
+            <h class="text-lg text-[#E6E6E6]">Website Development</h>
+            <p class="text-center text-[#797C86]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <!-- service card-2 -->
+          <div
+            class="flex flex-col px-9 py-12 gap-4 items-center bg-gradient-to-l from-[#0E0E10] to-[#17171A3B]"
+          >
+            <h class="text-lg text-[#E6E6E6]">E-Commerce Development</h>
+            <p class="text-center text-[#797C86]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <!-- service card-3 -->
+          <div
+            class="flex flex-col px-9 py-12 gap-4 items-center bg-gradient-to-l from-[#0E0E10] to-[#17171A3B]"
+          >
+            <h class="text-lg text-[#E6E6E6]">Web App Development</h>
+            <p class="text-center text-[#797C86]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <!-- service card-4 -->
+          <div
+            class="flex flex-col px-9 py-12 gap-4 items-center bg-gradient-to-l from-[#0E0E10] to-[#17171A3B]"
+          >
+            <h class="text-lg text-[#E6E6E6]"> API Dev. & Integration</h>
+            <p class="text-center text-[#797C86]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <!-- service card-5 -->
+          <div
+            class="flex flex-col px-9 py-12 gap-4 items-center bg-gradient-to-l from-[#0E0E10] to-[#17171A3B]"
+          >
+            <h class="text-lg text-[#E6E6E6]">Cloud-Based Solutions</h>
+            <p class="text-center text-[#797C86]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <!-- service card-6 -->
+          <div
+            class="flex flex-col px-9 py-12 gap-4 items-center bg-gradient-to-l from-[#0E0E10] to-[#17171A3B]"
+          >
+            <h class="text-lg text-[#E6E6E6]">Web Perform. Optimization</h>
+            <p class="text-center text-[#797C86]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <!-- service card-7 -->
+          <div
+            class="flex flex-col px-9 py-12 gap-4 items-center bg-gradient-to-l from-[#0E0E10] to-[#17171A3B]"
+          >
+            <h class="text-lg text-[#E6E6E6]">(SEO) Services</h>
+            <p class="text-center text-[#797C86]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <!-- service card-8 -->
+          <div
+            class="flex flex-col px-9 py-12 gap-4 items-center bg-gradient-to-l from-[#0E0E10] to-[#17171A3B]"
+          >
+            <h class="text-lg text-[#E6E6E6]">Website Maint. & Support</h>
+            <p class="text-center text-[#797C86]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ section -->
+      <section class="faq-section mx-10 my-40 space-y-16">
+        <div class="desc-title flex flex-col">
+          <h2 class="text-[#797C86] font-semibold montagu-slab-font uppercase">
+            FAQ’s
+          </h2>
+          <h1 class="font-bold lg:text-[48px] uppercase">
+            Frequently Asked Questions
+          </h1>
+        </div>
+        <!-- horizontal line -->
+        <div class="w-full h-0.5 bg-[#1C1C21] mb-12"></div>
+
+        <div class="flex flex-col gap-16">
+          <div class="space-y-4">
+            <div class="flex justify-between">
+              <h2 class="uppercase text-[#AFB0B6]">
+                What areas of web development do you focus on?
+              </h2>
+              <img src="./images/Icon-down.png" alt="" />
+            </div>
+            <p class="text-[#797C86]">
+              I specialize in web development, creating websites that deliver
+              unique user experiences.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex justify-between">
+              <h2 class="uppercase text-[#AFB0B6]">
+                How can I schedule a web development consultation with you?
+              </h2>
+              <img src="./images/Icon-up.png" alt="" />
+            </div>
+            <p class="hidden text-[#797C86]">
+              I specialize in web development, creating websites that deliver
+              unique user experiences.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex justify-between">
+              <h2 class="uppercase text-[#AFB0B6]">
+                Can I choose a specific platform for my website?
+              </h2>
+              <img src="./images/Icon-down.png" alt="" />
+            </div>
+            <p class="hidden text-[#797C86]">
+              I specialize in web development, creating websites that deliver
+              unique user experiences.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex justify-between">
+              <h2 class="uppercase text-[#AFB0B6]">
+                What tools and technologies do you use for web development?
+              </h2>
+              <img src="./images/Icon-down.png" alt="" />
+            </div>
+            <p class="hidden text-[#797C86]">
+              I specialize in web development, creating websites that deliver
+              unique user experiences.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex justify-between">
+              <h2 class="uppercase text-[#AFB0B6]">
+                Can I choose a specific platform for my website?
+              </h2>
+              <img src="./images/Icon-down.png" alt="" />
+            </div>
+            <p class="hidden text-[#797C86]">
+              I specialize in web development, creating websites that deliver
+              unique user experiences.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <section class="footer-section space-y-20 mb-10 px-10">
+        <div class="flex flex-col lg:flex-row justify-around py-20">
+          <!-- top side -->
+          <div class="space-y-4 mb-10">
+            <p class="text-[#797C86] font-semibold">Solutions</p>
+            <ul class="space-y-0.5">
+              <li>Glintopia</li>
+              <li class="w-[85%] h-0.5 bg-[#1C1C21]"></li>
+              <li>Fluxway</li>
+              <li class="w-[85%] h-0.5 bg-[#1C1C21]"></li>
+              <li>Fable’s</li>
+              <li class="w-[85%] h-0.5 bg-[#1C1C21]"></li>
+              <li>PowerCore</li>
+              <li class="w-[85%] h-0.5 bg-[#1C1C21]"></li>
+            </ul>
+          </div>
+
+          <div class="space-y-4 mb-10">
+            <p class="text-[#797C86] font-semibold">Customers</p>
+            <ul class="space-y-0.5">
+              <li>Glintopia</li>
+              <li class="w-[85%] h-0.5 bg-[#1C1C21]"></li>
+              <li>Fluxway</li>
+              <li class="w-[85%] h-0.5 bg-[#1C1C21]"></li>
+              <li>Fable’s</li>
+              <li class="w-[85%] h-0.5 bg-[#1C1C21]"></li>
+              <li>PowerCore</li>
+              <li class="w-[85%] h-0.5 bg-[#1C1C21]"></li>
+            </ul>
+          </div>
+
+          <div class="space-y-4 mb-10">
+            <p class="text-[#797C86] font-semibold">Partners</p>
+            <ul class="space-y-0.5">
+              <li>Glintopia</li>
+              <li class="w-[85%] h-0.5 bg-[#1C1C21]"></li>
+              <li>Fluxway</li>
+              <li class="w-[85%] h-0.5 bg-[#1C1C21]"></li>
+              <li>Fable’s</li>
+              <li class="w-[85%] h-0.5 bg-[#1C1C21]"></li>
+              <li>PowerCore</li>
+              <li class="w-[85%] h-0.5 bg-[#1C1C21]"></li>
+            </ul>
+          </div>
+
+          <div class="space-y-4 mb-10">
+            <p class="text-[#797C86] font-semibold">Stakeholders</p>
+            <ul class="space-y-0.5">
+              <li>Glintopia</li>
+              <li class="w-[85%] h-0.5 bg-[#1C1C21]"></li>
+              <li>Fluxway</li>
+              <li class="w-[85%] h-0.5 bg-[#1C1C21]"></li>
+              <li>Fable’s</li>
+              <li class="w-[85%] h-0.5 bg-[#1C1C21]"></li>
+              <li>PowerCore</li>
+              <li class="w-[85%] h-0.5 bg-[#1C1C21]"></li>
+            </ul>
+          </div>
+
+          <div class="space-y-4">
+            <p class="text-[#797C86] font-semibold">Offerings</p>
+            <ul class="space-y-0.5">
+              <li>Visions</li>
+              <li class="w-[85%] h-0.5 bg-[#1C1C21]"></li>
+              <li>Gatherings</li>
+              <li class="w-[85%] h-0.5 bg-[#1C1C21]"></li>
+              <li>BizSphere</li>
+              <li class="w-[85%] h-0.5 bg-[#1C1C21]"></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- bottom side -->
+        <!-- horizontal line -->
+        <div class="w-full h-0.5 bg-[#1C1C21] mb-12"></div>
+        <div class="lg:flex justify-between text-[#797C86] text-base">
+          <div class="flex gap-4">
+            <p>Terms & Conditions</p>
+            <p class="w-0.5 h-6 bg-[#1C1C21]"></p>
+            <p>Privacy Policy</p>
+          </div>
+          <div>
+            <p>© 2024 All rights reserved.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main section end -->
+  </body>
+</html>
